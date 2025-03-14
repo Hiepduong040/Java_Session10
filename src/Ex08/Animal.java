@@ -6,7 +6,7 @@ public class Animal {
 
     public Animal(String name, int age) {
         if (name.isEmpty() || age < 0) {
-            throw new IllegalArgumentException("Thông tin động vật không hợp lệ.");
+           System.out.println("Thông tin động vật không hợp lệ.");
         }
         this.name = name;
         this.age = age;
@@ -25,6 +25,6 @@ public class Animal {
     }
 
     public String makeSound() {
-        return "aaaaaaaaaaaa";
+        return "Some generic sound";
     }
 }
